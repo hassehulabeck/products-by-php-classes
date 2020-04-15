@@ -1,0 +1,25 @@
+        section {
+            display: flex;
+            margin: 1em;
+        }
+
+        div {
+            flex: 0 1 auto;
+            background: #eee;
+            padding: 1em;
+            margin: 0 2px;
+        }
+
+        .price {
+            color: red;
+            font-weight: bold;
+        }
+
+        .flavor {
+            color: blue;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .flavor span {
+            color: black;
+        }

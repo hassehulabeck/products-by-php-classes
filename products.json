@@ -1,0 +1,34 @@
+[{
+        "name": "Lättmjölk",
+        "price": 8.5,
+        "category": "dairy"
+    },
+    {
+        "name": "Mellanmjölk",
+        "price": 9.25,
+        "category": "dairy"
+    },
+    {
+        "name": "Standardmjölk",
+        "price": 10.5,
+        "category": "dairy"
+    },
+    {
+        "name": "Äppeljuice",
+        "price": 23,
+        "category": "juice",
+        "flavor": "äpple"
+    },
+    {
+        "name": "Apelsinjuice",
+        "price": 30,
+        "category": "juice",
+        "flavor": "apelsin"
+    },
+    {
+        "name": "Multivitaminjuice",
+        "price": 19,
+        "category": "juice",
+        "flavor": "okänt"
+    }
+]
