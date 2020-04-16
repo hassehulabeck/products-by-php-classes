@@ -6,7 +6,7 @@ class Product
     protected $name;
     protected $price;
 
-    public function __construct($name, $price, $category = null)
+    public function __construct($name = null, $price = null, $category = null)
     {
         $this->name = $name;
         $this->price = $price;

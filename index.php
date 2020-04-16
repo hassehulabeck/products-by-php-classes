@@ -7,8 +7,16 @@ error_reporting(E_ALL);
 include_once 'product.class.php';
 include_once 'juice.class.php';
 
-// Läs in (file_get_contents) och omvandla från json(decode) i samma veva. 
-$products = json_decode((file_get_contents('products.json')));
+$dbh = new PDO('mysql:host=localhost;dbname=drinks;charset=UTF8', 'drinkAdmin', "br0mmabl0cks");
+
+$sth = $dbh->prepare("SELECT * FROM breakfast_drinks");
+$sth->execute();
+$sth->setFetchMode(PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE, 'Product');
+$result = $sth->fetchAll();
+
+echo "<pre>";
+var_dump($result);
+echo "</pre>";
 
 // Två variabler för att lagra alla resp en produkt.
 $prodObjects = array();
